@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use these data or code, please cite the article and this archive."
+title: "Radionuclide identification from open-access gamma-ray spectra: classical peak matching vs. machine learning (data, code and models)"
+type: dataset
+authors:
+  - family-names: Nurhanafi
+    given-names: Kholis
+    affiliation: "Universitas Mulawarman, Samarinda, Indonesia"
+    # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+version: "1.0.0"
+date-released: "2026-11-19"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/kholisnh2-dev/radionuclide-id-dsp-vs-ml"
+doi: 10.5281/zenodo.24356057
+keywords:
+  - gamma-ray spectroscopy
+  - radionuclide identification
+  - peak matching
+  - machine learning
+  - open data
+preferred-citation:
+  type: article
+  title: "Classical Peak Matching Versus Machine Learning for Radionuclide Identification Using Open-Access Gamma-Ray Spectra: A Reproducible Feasibility Study"
+  authors:
+    - family-names: Nurhanafi
+      given-names: Kholis
+  journal: "Atom Indonesia"
+  year: 2026
+  status: submitted

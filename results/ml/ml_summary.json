@@ -1,0 +1,14 @@
+{
+  "n_classes": 36,
+  "n_augmented_train": 8640,
+  "n_augmented_indist_val": 2160,
+  "rf_indist_val_accuracy": 0.9967592592592592,
+  "cnn_indist_val_accuracy": 0.9712963104248047,
+  "rf_heldout_original_accuracy_native_hpge": 1.0,
+  "rf_heldout_original_accuracy_degraded_nai": 1.0,
+  "cnn_heldout_original_accuracy_native_hpge": 0.9722222222222222,
+  "cnn_heldout_original_accuracy_degraded_nai": 0.9444444444444444,
+  "rf_ablated_peaks_removed": 0.027777777777777776,
+  "cnn_ablated_peaks_removed": 0.027777777777777776,
+  "dsp_phase3_gated_accuracy": 0.75
+}

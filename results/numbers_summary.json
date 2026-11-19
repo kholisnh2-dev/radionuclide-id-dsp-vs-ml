@@ -1,0 +1,266 @@
+{
+  "dataset": {
+    "n_spectra": 36,
+    "n_reference_lines": 219,
+    "dsp_scope": 27,
+    "no_reference": 9,
+    "n_aug_train": 8640,
+    "n_aug_val": 2160,
+    "n_aug_total": 10800
+  },
+  "dsp_native": {
+    "covered": 25,
+    "correct": 19,
+    "coverage": 0.9259259259259259,
+    "accuracy": 0.76,
+    "ci95": [
+      0.548712,
+      0.906436
+    ]
+  },
+  "dsp_degraded": {
+    "covered": 22,
+    "correct": 9,
+    "coverage": 0.8148148148148148,
+    "accuracy": 0.4090909090909091,
+    "ci95": [
+      0.207093,
+      0.636453
+    ]
+  },
+  "rf_27": {
+    "correct": 27,
+    "n": 27,
+    "ci95": [
+      0.872297,
+      1.0
+    ]
+  },
+  "cnn_degraded_27": {
+    "correct": 26,
+    "n": 27,
+    "ci95": [
+      0.810294,
+      0.999063
+    ]
+  },
+  "heldout36_single_run": {
+    "rf_indist_val_accuracy": 0.9967592592592592,
+    "cnn_indist_val_accuracy": 0.9712963104248047,
+    "rf_heldout_original_accuracy_native_hpge": 1.0,
+    "rf_heldout_original_accuracy_degraded_nai": 1.0,
+    "cnn_heldout_original_accuracy_native_hpge": 0.9722222222222222,
+    "cnn_heldout_original_accuracy_degraded_nai": 0.9444444444444444,
+    "dsp_phase3_gated_accuracy": 0.75
+  },
+  "multiseed36": {
+    "rf_native": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "rf_degraded": {
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "max": 1.0
+    },
+    "cnn_native": {
+      "mean": 0.9222222222222222,
+      "std": 0.02324055629261322,
+      "min": 0.8888888888888888,
+      "max": 0.9444444444444444
+    },
+    "cnn_degraded": {
+      "mean": 0.861111111111111,
+      "std": 0.05892556509887894,
+      "min": 0.8055555555555556,
+      "max": 0.9444444444444444
+    }
+  },
+  "ablation": {
+    "n_bins_masked": 256,
+    "n_bins_total": 512,
+    "rf_ablated_accuracy": 0.027777777777777776,
+    "cnn_ablated_accuracy": 0.027777777777777776
+  },
+  "ablation_control": {
+    "n_bins_total": 512,
+    "n_peak_bins": 256,
+    "n_random_seeds": 20,
+    "A_peak_regions_blanked": {
+      "rf": 0.027777777777777776,
+      "cnn": 0.027777777777777776
+    },
+    "B_only_peak_regions_kept": {
+      "rf": 0.9722222222222222,
+      "cnn": 0.5555555555555556
+    },
+    "C_random_bins_blanked": {
+      "rf_mean": 0.22361111111111112,
+      "rf_std": 0.06590389659758093,
+      "rf_min": 0.1388888888888889,
+      "rf_max": 0.3888888888888889,
+      "cnn_mean": 0.36249999999999993,
+      "cnn_std": 0.12855566675254357,
+      "cnn_min": 0.19444444444444445,
+      "cnn_max": 0.5833333333333334
+    }
+  },
+  "heldout36_ci95": {
+    "rf_native_36_of_36": [
+      0.902606,
+      1.0
+    ],
+    "cnn_native_single_run": [
+      0.854711,
+      0.999297
+    ],
+    "cnn_degraded_single_run": [
+      0.813363,
+      0.9932
+    ]
+  },
+  "mcnemar": [
+    {
+      "method_a": "DSP (gated, abstain=wrong)",
+      "method_b": "RF (native)",
+      "a_right_b_wrong": 0,
+      "b_right_a_wrong": 8,
+      "n_discordant": 8,
+      "p_value": 0.0078125
+    },
+    {
+      "method_a": "DSP (gated, abstain=wrong)",
+      "method_b": "CNN (native)",
+      "a_right_b_wrong": 0,
+      "b_right_a_wrong": 8,
+      "n_discordant": 8,
+      "p_value": 0.0078125
+    },
+    {
+      "method_a": "RF (native)",
+      "method_b": "CNN (native)",
+      "a_right_b_wrong": 0,
+      "b_right_a_wrong": 0,
+      "n_discordant": 0,
+      "p_value": 1.0
+    },
+    {
+      "method_a": "RF (native)",
+      "method_b": "RF (degraded NaI)",
+      "a_right_b_wrong": 0,
+      "b_right_a_wrong": 0,
+      "n_discordant": 0,
+      "p_value": 1.0
+    },
+    {
+      "method_a": "CNN (native)",
+      "method_b": "CNN (degraded NaI)",
+      "a_right_b_wrong": 1,
+      "b_right_a_wrong": 0,
+      "n_discordant": 1,
+      "p_value": 1.0
+    }
+  ],
+  "coverage_matched": {
+    "RF (native)": {
+      "threshold": 0.88,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    },
+    "RF (degraded NaI)": {
+      "threshold": 0.92,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    },
+    "CNN (native)": {
+      "threshold": 0.73,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    },
+    "CNN (degraded NaI)": {
+      "threshold": 0.63,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    }
+  },
+  "false_accept": {
+    "native": "3/9",
+    "degraded": "2/9"
+  },
+  "cost": {
+    "dsp_model_size_mb": 0.00476,
+    "dsp_asset_note": "No trained model file - just the 219-row reference peak table + a 2-parameter resolution formula.",
+    "rf_model_size_mb": 61.69,
+    "cnn_model_size_mb": 0.29,
+    "dsp_inference_ms_native_mean": 53.349,
+    "dsp_inference_ms_degraded_mean": 54.3,
+    "rf_inference_ms_mean": 58.02,
+    "cnn_inference_ms_mean": 66.608,
+    "dsp_input_size": "8192-channel full-resolution spectrum",
+    "ml_input_size": "512-bin rebinned spectrum",
+    "note": "DSP and ML operate on different-resolution inputs (see input_size fields) - timings are NOT purely an algorithm-vs-algorithm comparison, they also reflect that difference. Flagged, not hidden."
+  },
+  "supplementary_tests": {
+    "mcnemar_dsp_native_vs_dsp_nai": {
+      "a_right_b_wrong": 12,
+      "b_right_a_wrong": 2,
+      "n_discordant": 14,
+      "p_value": 0.012939453125
+    },
+    "mcnemar_dsp_nai_vs_rf_nai": {
+      "a_right_b_wrong": 0,
+      "b_right_a_wrong": 18,
+      "n_discordant": 18,
+      "p_value": 7.62939453125e-06
+    },
+    "mcnemar_dsp_nai_vs_cnn_nai": {
+      "a_right_b_wrong": 0,
+      "b_right_a_wrong": 17,
+      "n_discordant": 17,
+      "p_value": 1.52587890625e-05
+    },
+    "cnn_multiseed_27_isotopes_native": {
+      "per_seed": {
+        "20260814": {
+          "misses": [
+            "Fiestaware"
+          ],
+          "accuracy": 0.9629629629629629
+        },
+        "1": {
+          "misses": [
+            "Fiestaware"
+          ],
+          "accuracy": 0.9629629629629629
+        },
+        "2": {
+          "misses": [
+            "Fiestaware"
+          ],
+          "accuracy": 0.9629629629629629
+        },
+        "3": {
+          "misses": [
+            "Fiestaware"
+          ],
+          "accuracy": 0.9629629629629629
+        },
+        "4": {
+          "misses": [
+            "Co-57",
+            "Tc-99m"
+          ],
+          "accuracy": 0.9259259259259259
+        }
+      },
+      "mean": 0.9555555555555555,
+      "std": 0.016563466499998417,
+      "min": 0.9259259259259259,
+      "max": 0.9629629629629629
+    },
+    "cnn_trainable_parameters": 20580
+  }
+}

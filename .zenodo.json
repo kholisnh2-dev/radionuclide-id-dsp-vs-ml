@@ -1,0 +1,10 @@
+{
+  "title": "Radionuclide identification from open-access gamma-ray spectra: classical peak matching vs. machine learning (data, code and models)",
+  "upload_type": "dataset",
+  "description": "Data, code, trained models and figures supporting the article 'Classical Peak Matching Versus Machine Learning for Radionuclide Identification Using Open-Access Gamma-Ray Spectra: A Reproducible Feasibility Study' (submitted to Atom Indonesia). Inputs: 36 measured spectra from the OpenGammaProject Gamma-Spectrum-Database and reference lines from the GSD and the INL Gamma-Ray Spectrum Catalog.",
+  "creators": [{"name": "Nurhanafi, Kholis", "affiliation": "Universitas Mulawarman"}],
+  "license": "GPL-3.0-or-later",
+  "keywords": ["gamma-ray spectroscopy", "radionuclide identification", "peak matching", "machine learning", "open data"],
+  "access_right": "open",
+  "version": "1.0.0"
+}

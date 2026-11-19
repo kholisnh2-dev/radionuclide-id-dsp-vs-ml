@@ -1,0 +1,6 @@
+{
+  "n_bins_masked": 256,
+  "n_bins_total": 512,
+  "rf_ablated_accuracy": 0.027777777777777776,
+  "cnn_ablated_accuracy": 0.027777777777777776
+}

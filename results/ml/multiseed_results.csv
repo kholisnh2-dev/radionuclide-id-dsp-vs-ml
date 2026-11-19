@@ -1,0 +1,6 @@
+seed,rf_native,rf_degraded,cnn_native,cnn_degraded,rf_misses_native,cnn_misses_native,elapsed_sec
+20260814,1.0,1.0,0.9444444444444444,0.8611111111111112,[],"['Fiestaware', 'La-138']",116.4
+1,1.0,1.0,0.9444444444444444,0.8888888888888888,[],"['Fiestaware', 'Pitchblende']",108.6
+2,1.0,1.0,0.8888888888888888,0.8055555555555556,[],"['Fiestaware', 'Ge-68_Ga-68', 'La-138', 'Pitchblende']",110.9
+3,1.0,1.0,0.9166666666666666,0.9444444444444444,[],"['Fiestaware', 'La-138', 'Pitchblende']",108.1
+4,1.0,1.0,0.9166666666666666,0.8055555555555556,[],"['Co-57', 'Pitchblende', 'Tc-99m']",110.2

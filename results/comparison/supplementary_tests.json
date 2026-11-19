@@ -1,0 +1,60 @@
+{
+  "mcnemar_dsp_native_vs_dsp_nai": {
+    "a_right_b_wrong": 12,
+    "b_right_a_wrong": 2,
+    "n_discordant": 14,
+    "p_value": 0.012939453125
+  },
+  "mcnemar_dsp_nai_vs_rf_nai": {
+    "a_right_b_wrong": 0,
+    "b_right_a_wrong": 18,
+    "n_discordant": 18,
+    "p_value": 7.62939453125e-06
+  },
+  "mcnemar_dsp_nai_vs_cnn_nai": {
+    "a_right_b_wrong": 0,
+    "b_right_a_wrong": 17,
+    "n_discordant": 17,
+    "p_value": 1.52587890625e-05
+  },
+  "cnn_multiseed_27_isotopes_native": {
+    "per_seed": {
+      "20260814": {
+        "misses": [
+          "Fiestaware"
+        ],
+        "accuracy": 0.9629629629629629
+      },
+      "1": {
+        "misses": [
+          "Fiestaware"
+        ],
+        "accuracy": 0.9629629629629629
+      },
+      "2": {
+        "misses": [
+          "Fiestaware"
+        ],
+        "accuracy": 0.9629629629629629
+      },
+      "3": {
+        "misses": [
+          "Fiestaware"
+        ],
+        "accuracy": 0.9629629629629629
+      },
+      "4": {
+        "misses": [
+          "Co-57",
+          "Tc-99m"
+        ],
+        "accuracy": 0.9259259259259259
+      }
+    },
+    "mean": 0.9555555555555555,
+    "std": 0.016563466499998417,
+    "min": 0.9259259259259259,
+    "max": 0.9629629629629629
+  },
+  "cnn_trainable_parameters": 20580
+}

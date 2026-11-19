@@ -1,0 +1,91 @@
+{
+  "scope_n_isotopes": 27,
+  "dsp_gate_operating_point": {
+    "coverage": 0.9259259259259259,
+    "accuracy": 0.76
+  },
+  "coverage_matched_comparison": {
+    "RF (native)": {
+      "threshold": 0.88,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    },
+    "RF (degraded NaI)": {
+      "threshold": 0.92,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    },
+    "CNN (native)": {
+      "threshold": 0.73,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    },
+    "CNN (degraded NaI)": {
+      "threshold": 0.63,
+      "coverage": 0.9259259259259259,
+      "accuracy": 1.0
+    }
+  },
+  "robustness": {
+    "dsp_native_accuracy_gated": 0.76,
+    "dsp_native_coverage_gated": 0.9259259259259259,
+    "dsp_degraded_accuracy_gated": 0.4090909090909091,
+    "dsp_degraded_coverage_gated": 0.8148148148148148,
+    "rf_native_accuracy_fullscope": 1.0,
+    "rf_degraded_accuracy_fullscope": 1.0,
+    "cnn_native_accuracy_fullscope": 1.0,
+    "cnn_degraded_accuracy_fullscope": 0.9629629629629629,
+    "dsp_false_accept_native": "3/9",
+    "dsp_false_accept_degraded_nai_recalibrated": "2/9"
+  },
+  "confidence_intervals_95pct": {
+    "dsp_native_gated": {
+      "successes": 19,
+      "n": 25,
+      "point": 0.76,
+      "ci95_low": 0.5487,
+      "ci95_high": 0.9064
+    },
+    "rf_native_fullscope": {
+      "successes": 27,
+      "n": 27,
+      "point": 1.0,
+      "ci95_low": 0.8723,
+      "ci95_high": 1.0
+    },
+    "rf_degraded_fullscope": {
+      "successes": 27,
+      "n": 27,
+      "point": 1.0,
+      "ci95_low": 0.8723,
+      "ci95_high": 1.0
+    },
+    "cnn_native_fullscope": {
+      "successes": 27,
+      "n": 27,
+      "point": 1.0,
+      "ci95_low": 0.8723,
+      "ci95_high": 1.0
+    },
+    "cnn_degraded_fullscope": {
+      "successes": 26,
+      "n": 27,
+      "point": 0.963,
+      "ci95_low": 0.8103,
+      "ci95_high": 0.9991
+    }
+  },
+  "computational_cost": {
+    "dsp_model_size_mb": 0.00476,
+    "dsp_asset_note": "No trained model file - just the 219-row reference peak table + a 2-parameter resolution formula.",
+    "rf_model_size_mb": 61.69,
+    "cnn_model_size_mb": 0.29,
+    "dsp_inference_ms_native_mean": 53.349,
+    "dsp_inference_ms_degraded_mean": 54.3,
+    "rf_inference_ms_mean": 58.02,
+    "cnn_inference_ms_mean": 66.608,
+    "dsp_input_size": "8192-channel full-resolution spectrum",
+    "ml_input_size": "512-bin rebinned spectrum",
+    "note": "DSP and ML operate on different-resolution inputs (see input_size fields) - timings are NOT purely an algorithm-vs-algorithm comparison, they also reflect that difference. Flagged, not hidden."
+  }
+}

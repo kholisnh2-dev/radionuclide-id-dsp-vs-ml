@@ -1,0 +1,6 @@
+# large files distributed through the Zenodo archive (regenerable with the scripts)
+models/rf_model.joblib
+data/augmented/augmented_train.npz
+__pycache__/
+*.pyc
+.venv*/

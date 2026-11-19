@@ -1,0 +1,6 @@
+method_a,method_b,a_right_b_wrong,b_right_a_wrong,n_discordant,p_value
+"DSP (gated, abstain=wrong)",RF (native),0,8,8,0.0078125
+"DSP (gated, abstain=wrong)",CNN (native),0,8,8,0.0078125
+RF (native),CNN (native),0,0,0,1.0
+RF (native),RF (degraded NaI),0,0,0,1.0
+CNN (native),CNN (degraded NaI),1,0,1,1.0

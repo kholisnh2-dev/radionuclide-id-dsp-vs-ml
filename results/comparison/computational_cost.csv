@@ -1,0 +1,4 @@
+metode,ukuran_aset_mb,latensi_native_ms,latensi_degraded_ms,ukuran_input,catatan
+DSP klasik,0.00476,53.349,54.3,8192-channel full-resolution spectrum,No trained model file - just the 219-row reference peak table + a 2-parameter resolution formula.
+Random Forest,61.69,58.02,,512-bin rebinned spectrum,
+CNN,0.29,66.608,,512-bin rebinned spectrum,
