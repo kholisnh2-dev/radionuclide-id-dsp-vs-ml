@@ -4,7 +4,7 @@
 
 Data, code, trained models and figures for the article
 
-> K. Nurhanafi, *Classical Peak Matching Versus Machine Learning for Radionuclide Identification Using Open-Access Gamma-Ray Spectra: A Reproducible Feasibility Study*, submitted to Atom Indonesia.
+> K. Nurhanafi et al., *Classical Peak Matching Versus Machine Learning for Radionuclide Identification Using Open-Access Gamma-Ray Spectra: A Reproducible Feasibility Study*, submitted to Atom Indonesia.
 
 All inputs are open-access: 36 measured gamma-ray spectra from the OpenGammaProject Gamma-Spectrum-Database (GSD) and reference energy lines from the GSD pages and the INL Gamma-Ray Spectrum Catalog.
 
